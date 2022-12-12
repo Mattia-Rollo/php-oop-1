@@ -30,7 +30,7 @@ include __DIR__ . './partials/header.php';
 
 <div class="container">
     <h1 class="py-3">Movies</h1>
-    <div class="row ">
+    <div class="row py-5">
         <?php foreach ($db_movies as $movie) { ?>
         <div class="col-4 bg-secondary">
 
