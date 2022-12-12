@@ -1,17 +1,9 @@
 <?php
 
-include __DIR__ . './Models/Movie.php';
+// include __DIR__ . './Models/Movie.php';
 include __DIR__ . './db.php';
 
-$Avatar = new Movie("Avatar", ["Fantascienza"], 190, "1000000", false);
 
-// $Avatar->title = "BelloCiccio";
-
-$Avenger = new Movie("Avenger", ["Fantascienza", "azione"], 130, "500000", "false");
-
-$BlackAdam = new Movie("BlackAdam", ["Fantascienza", "Bello"], 100, "23456", false);
-
-array_push($db_movies, $Avatar, $Avenger, $BlackAdam);
 
 // var_dump($db_movies);
 
@@ -37,10 +29,27 @@ include __DIR__ . './partials/header.php';
 ?>
 
 <div class="container">
-    <div class="row">
-        <div class="col-4">
+    <h1 class="py-3">Movies</h1>
+    <div class="row ">
+        <?php foreach ($db_movies as $movie) { ?>
+        <div class="col-4 bg-secondary">
+
+
+            <div class="card" style="w-100">
+                <img src="
+                <?php echo $movie->imgPath; ?> 
+                " class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        <?php echo $movie->title; ?><br>
+
+                    </p>
+                </div>
+            </div>
+
 
         </div>
+        <?php } ?>
     </div>
 </div>
 

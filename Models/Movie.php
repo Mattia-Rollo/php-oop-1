@@ -4,6 +4,8 @@ class Movie
 {
     public $title;
     private $genres;
+
+    public $imgPath;
     private $duration;
     private $typeDuration;
     private $colors = true;
@@ -12,7 +14,7 @@ class Movie
     public $budget;
 
 
-    function __construct(string $_title, array $_genres = null, int $_durata, string $_budget, bool $_muted)
+    function __construct(string $_title, array $_genres = null, int $_durata, string $_budget, bool $_muted, $_imgPath)
     {
 
         $this->title = $_title;
@@ -21,8 +23,8 @@ class Movie
         $this->duration = $_durata;
         $this->budget = $_budget;
         $this->muted = $_muted;
+        $this->imgPath = $_imgPath;
         $this->durataString();
-
     }
 
 
@@ -37,10 +39,7 @@ class Movie
     }
     public function getMovieInfo()
     {
-
         return " titolo: " . $this->title . " genere: " . implode(",", $this->genres) . " durata: " . $this->duration . " minuti " . $this->typeDuration . "<br>";
-
-
     }
     public function getType()
     {
