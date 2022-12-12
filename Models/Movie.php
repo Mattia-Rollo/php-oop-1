@@ -3,7 +3,7 @@
 class Movie
 {
     public $title;
-    private $genres;
+    public $genres;
 
     public $description;
 
@@ -47,6 +47,10 @@ class Movie
     public function getType()
     {
         return self::$type;
+    }
+    public function getGenres()
+    {
+        return implode(",", self::$genres);
     }
 }
 

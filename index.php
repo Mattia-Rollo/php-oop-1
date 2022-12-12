@@ -1,6 +1,6 @@
 <?php
 
-// include __DIR__ . './Models/Movie.php';
+include_once __DIR__ . './Models/Movie.php';
 include __DIR__ . './db.php';
 
 
@@ -30,7 +30,7 @@ include __DIR__ . './partials/header.php';
 
 <div class="container">
     <h1 class="py-3">Movies</h1>
-    <div class="row py-5">
+    <div class="row py-5  gy-3">
         <?php foreach ($db_movies as $movie) { ?>
         <div class="col-4">
 
@@ -44,7 +44,9 @@ include __DIR__ . './partials/header.php';
                         <?php echo $movie->title; ?>
                     </h3>
                     <p class="card-text">
-                        <?php echo $movie->description; ?><br>
+                        <?php echo $movie->description; ?><br><br>
+
+                        <?php echo "Generi: " . implode(",", $movie->genres); ?>
 
                     </p>
                 </div>
