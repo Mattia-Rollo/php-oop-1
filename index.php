@@ -38,7 +38,7 @@ include __DIR__ . './partials/header.php';
         <div class="col-4">
 
 
-            <div class="card shadow-lg" style="w-100">
+            <div class="card shadow-lg overflow-hidden" style="w-100">
                 <div class="overflow-hidden">
                     <img src="
                     <?php echo $movie->imgPath; ?>
