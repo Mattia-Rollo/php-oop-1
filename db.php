@@ -44,7 +44,16 @@ $Avatar = new Movie(
     "https://cultura.biografieonline.it/wp-content/uploads/2012/05/avatar-cielo.jpg",
     "L'ex marine Jake Sully è stato reclutato per una missione sul pianeta Pandora con lo scopo di recuperare risorse naturali in esaurimento sulla Terra. Inaspettatamente si ritrova a voler proteggere il mondo magico al quale si sente stranamente legato."
 );
+$Elemental = new Movie(
+    "Elemental",
+    ["Animazione", "Avventura", "Magico"],
+    100,
+    "23456",
+    false,
+    "https://media-assets.wired.it/photos/6377434d4e90448cb80f6f6f/16:9/w_2560%2Cc_limit/ELEMENTAL_ONLINE-USE-m328_152_pub.pub16.222.jpg",
+    "Diretto da Peter Sohn, che già aveva guidato il tenero Il viaggio di Arlo nel 2015, Elemental era stato annunciato per la prima volta lo scorso maggio. Sohn ha raccontato che l'idea gli viene da una fascinazione lontana: “Da ragazzo studiavo la tavola periodica degli elementi e ho sempre pensato che fossero degli appartamenti. Facevo battute sul fatto che il carbonio compariva accanto al nickel ma i due non si fidavano molto l'uno dell'altro”, "
+);
 
 
-array_push($db_movies, $IronMan, $Avengers, $BlackAdam, $Avatar);
+array_push($db_movies, $IronMan, $Avengers, $BlackAdam, $Avatar, $Elemental);
 ?>
