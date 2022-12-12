@@ -30,6 +30,9 @@ include __DIR__ . './partials/header.php';
 
 <div class="container">
     <h1 class="py-3">Movies</h1>
+    <h2>
+        <?php echo Movie::$type; ?>
+    </h2>
     <div class="row py-5  gy-3">
         <?php foreach ($db_movies as $movie) { ?>
         <div class="col-4">
@@ -47,6 +50,7 @@ include __DIR__ . './partials/header.php';
                         <?php echo $movie->description; ?><br><br>
 
                         <?php echo "Generi: " . implode(",", $movie->genres); ?>
+
 
                     </p>
                 </div>
