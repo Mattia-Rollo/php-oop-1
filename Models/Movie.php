@@ -3,27 +3,22 @@
 class Movie
 {
     public $title;
-    // public $cast;
     private $genres;
-
-
-    private $durata;
+    private $duration;
     private $strDurata;
-
     private $colors;
-
     public $muted;
     public $dateRelase;
     public $budget;
 
 
-    function __construct(string $_title, array $_genres, int $_durata, string $_budget, bool $_muted)
+    function __construct(string $_title, array $_genres = null, int $_durata, string $_budget, bool $_muted)
     {
 
         $this->title = $_title;
         // $this->cast = $_cast;
         $this->genres = $_genres;
-        $this->durata = $_durata;
+        $this->duration = $_durata;
         $this->budget = $_budget;
         $this->muted = $_muted;
         $this->durataString();
@@ -34,7 +29,7 @@ class Movie
     // funzione per determinare se è un lungo metraggio uno medio o corto
     public function durataString()
     {
-        if ($this->durata > 130) {
+        if ($this->duration > 130) {
             $this->strDurata = "è un lungometraggio";
         } else {
             $this->strDurata = "è un cortometraggio";
