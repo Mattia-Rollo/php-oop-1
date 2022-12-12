@@ -21,6 +21,17 @@ foreach ($db_movies as $Movie) {
 }
 ;
 
+?>
+
+<?php
+include __DIR__ . './partials/header.php';
+?>
+
+
+<?php
+include __DIR__ . './partials/footer.php';
+?>
+
 // var_dump($Avatar);
 // $Avatar->durataString();
 // var_dump($Avenger);

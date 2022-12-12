@@ -6,7 +6,7 @@ class Movie
     private $genres;
     private $duration;
     private $typeDuration;
-    private $colors;
+    private $colors = true;
     public $muted;
     public static $type = "film";
     public $budget;
