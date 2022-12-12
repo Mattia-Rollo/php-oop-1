@@ -5,6 +5,8 @@ class Movie
     public $title;
     private $genres;
 
+    public $description;
+
     public $imgPath;
     private $duration;
     private $typeDuration;
@@ -14,7 +16,7 @@ class Movie
     public $budget;
 
 
-    function __construct(string $_title, array $_genres = null, int $_durata, string $_budget, bool $_muted, $_imgPath)
+    function __construct(string $_title, array $_genres = null, int $_durata, string $_budget, bool $_muted, $_imgPath, $_description)
     {
 
         $this->title = $_title;
@@ -24,6 +26,7 @@ class Movie
         $this->budget = $_budget;
         $this->muted = $_muted;
         $this->imgPath = $_imgPath;
+        $this->description = $_description;
         $this->durataString();
     }
 

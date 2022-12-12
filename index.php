@@ -40,9 +40,11 @@ include __DIR__ . './partials/header.php';
                 <?php echo $movie->imgPath; ?> 
                 " class="card-img-top" alt="...">
                 <div class="card-body">
+                    <h3 class="text-center">
+                        <?php echo $movie->title; ?>
+                    </h3>
                     <p class="card-text">
-                        <?php echo $movie->title; ?><br>
-
+                        <?php echo $movie->description; ?>
                     </p>
                 </div>
             </div>
