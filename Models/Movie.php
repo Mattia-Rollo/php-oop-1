@@ -8,7 +8,7 @@ class Movie
     private $typeDuration;
     private $colors;
     public $muted;
-    public static $dateRelase;
+    public static $type = "film";
     public $budget;
 
 
@@ -42,9 +42,9 @@ class Movie
 
 
     }
-    public function getData()
+    public function getType()
     {
-
+        return self::$type;
     }
 }
 

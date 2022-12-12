@@ -16,6 +16,7 @@ array_push($db_movies, $Avatar, $Avenger, $BlackAdam);
 // var_dump($db_movies);
 
 foreach ($db_movies as $Movie) {
+    echo $Movie->getType() . ": ";
     echo $Movie->getMovieInfo();
 }
 ;
