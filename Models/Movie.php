@@ -36,8 +36,11 @@ class Movie
     {
         if ($this->duration > 130) {
             $this->typeDuration = "è un lungometraggio";
+        } elseif ($this->duration < 130 && $this->duration > 100) {
+            $this->typeDuration = "è un medio metraggio";
         } else {
             $this->typeDuration = "è un cortometraggio";
+
         }
     }
     public function getMovieInfo()
