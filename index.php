@@ -1,7 +1,7 @@
 <?php
 
 include __DIR__ . './Models/Movie.php';
-include __DIR__ . './Models/db.php';
+include __DIR__ . './db.php';
 
 $Avatar = new Movie("Avatar", ["Fantascienza"], 190, "1000000", false);
 
