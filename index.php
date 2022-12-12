@@ -49,7 +49,8 @@ include __DIR__ . './partials/header.php';
                     <p class="card-text">
                         <?php echo $movie->description; ?><br><br>
 
-                        <?php echo "Generi: " . implode(",", $movie->genres); ?>
+                        <?php echo "Generi: " . implode(",", $movie->genres); ?><br><br>
+                        <?php echo $movie->getMovieInfo(); ?><br><br>
 
 
                     </p>
