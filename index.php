@@ -16,9 +16,9 @@ $BlackAdam = new Movie("BlackAdam", ["Fantascienza", "Azione", ""], 100, "23456"
 // $Avenger->durataString();
 var_dump($BlackAdam);
 // $BlackAdam->durataString();
-$Avatar->getMovieInfo();
-$Avenger->getMovieInfo();
-$BlackAdam->getMovieInfo();
+echo $Avatar->getMovieInfo();
+echo $Avenger->getMovieInfo();
+echo $BlackAdam->getMovieInfo();
 
 // $listMovie = [$Avatar, $Avenger, $BlackAdam];
 // var_dump($listMovie);

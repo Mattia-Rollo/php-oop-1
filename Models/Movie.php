@@ -43,7 +43,7 @@ class Movie
     public function getMovieInfo()
     {
 
-        echo " titolo: " . $this->title . " genere: " . implode(",", $this->genres) . " durata: " . $this->strDurata . "<br>";
+        return " titolo: " . $this->title . " genere: " . implode(",", $this->genres) . " durata: " . $this->strDurata . "<br>";
 
 
     }
