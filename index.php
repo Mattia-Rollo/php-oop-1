@@ -15,12 +15,17 @@ array_push($db_movies, $Avatar, $Avenger, $BlackAdam);
 
 var_dump($db_movies);
 
+foreach ($db_movies as $Movie) {
+    echo $Movie->getMovieInfo();
+}
+;
+
 // var_dump($Avatar);
 // $Avatar->durataString();
 // var_dump($Avenger);
 // $Avenger->durataString();
 // var_dump($BlackAdam);
 // $BlackAdam->durataString();
-echo $Avatar->getMovieInfo();
-echo $Avenger->getMovieInfo();
-echo $BlackAdam->getMovieInfo();
+// echo $Avatar->getMovieInfo();
+// echo $Avenger->getMovieInfo();
+// echo $BlackAdam->getMovieInfo();
