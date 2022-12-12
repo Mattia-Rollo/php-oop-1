@@ -1,8 +1,8 @@
-<?php 
+<?php
 
-class genres {
+class genres
+{
     public $name;
-    public $
 }
 
 ?>

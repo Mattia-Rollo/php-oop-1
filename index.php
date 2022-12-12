@@ -15,22 +15,10 @@ array_push($db_movies, $Avatar, $Avenger, $BlackAdam);
 
 // var_dump($db_movies);
 
-foreach ($db_movies as $Movie) {
-    echo $Movie->getType() . ": ";
-    echo $Movie->getMovieInfo();
-}
-;
-
-?>
-
-<?php
-include __DIR__ . './partials/header.php';
-?>
-
-
-<?php
-include __DIR__ . './partials/footer.php';
-?>
+// foreach ($db_movies as $Movie) {
+//     echo $Movie->getType() . ": ";
+//     echo $Movie->getMovieInfo();
+// };
 
 // var_dump($Avatar);
 // $Avatar->durataString();
@@ -41,3 +29,21 @@ include __DIR__ . './partials/footer.php';
 // echo $Avatar->getMovieInfo();
 // echo $Avenger->getMovieInfo();
 // echo $BlackAdam->getMovieInfo();
+
+?>
+
+<?php
+include __DIR__ . './partials/header.php';
+?>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+
+        </div>
+    </div>
+</div>
+
+<?php
+include __DIR__ . './partials/footer.php';
+?>
