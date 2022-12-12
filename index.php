@@ -44,7 +44,8 @@ include __DIR__ . './partials/header.php';
                         <?php echo $movie->title; ?>
                     </h3>
                     <p class="card-text">
-                        <?php echo $movie->description; ?>
+                        <?php echo $movie->description; ?><br>
+
                     </p>
                 </div>
             </div>

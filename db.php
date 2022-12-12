@@ -3,7 +3,7 @@
 include __DIR__ . './Models/Movie.php';
 
 $db_movies = [];
-$Avatar = new Movie(
+$IronMan = new Movie(
     "Iron Man",
     ["Fantascienza"],
     190,
@@ -34,7 +34,16 @@ $BlackAdam = new Movie(
     "https://i0.wp.com/www.comicsuniverse.it/wp-content/uploads/2021/12/2021-12-08-15.38.21-1.jpg?resize=759%2C500&ssl=1",
     "La trama ufficiale: Quasi 5.000 anni dopo essere stato dotato dei poteri onnipotenti degli antichi dei – e imprigionato altrettanto rapidamente – Black Adam (Johnson) viene liberato dalla sua tomba terrena, pronto a scatenare la sua forma unica di giustizia nel mondo moderno."
 );
+$Avatar = new Movie(
+    "Avatar",
+    ["Fantascienza", "Azione", "Magico"],
+    100,
+    "23456",
+    false,
+    "https://cultura.biografieonline.it/wp-content/uploads/2012/05/avatar-cielo.jpg",
+    "L'ex marine Jake Sully è stato reclutato per una missione sul pianeta Pandora con lo scopo di recuperare risorse naturali in esaurimento sulla Terra. Inaspettatamente si ritrova a voler proteggere il mondo magico al quale si sente stranamente legato."
+);
 
 
-array_push($db_movies, $Avatar, $Avengers, $BlackAdam);
+array_push($db_movies, $IronMan, $Avengers, $BlackAdam, $Avatar);
 ?>
