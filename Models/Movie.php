@@ -42,7 +42,7 @@ class Movie
     }
     public function getMovieInfo()
     {
-        return " titolo: " . $this->title . " genere: " . implode(",", $this->genres) . " durata: " . $this->duration . " minuti " . $this->typeDuration . "<br>";
+        return " titolo: " . $this->title . "<br> genere: " . implode(",", $this->genres) . "<br> durata: " . $this->duration . "minuti, " . $this->typeDuration . "<br>";
     }
     public function getType()
     {
