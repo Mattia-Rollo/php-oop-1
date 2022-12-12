@@ -2,7 +2,7 @@
 
 class Movie
 {
-    public $title;
+    private $title;
     // public $cast;
     public $genre;
 
@@ -10,7 +10,7 @@ class Movie
 
     public $colors;
 
-    function __construct($_title, $_genre, $_durata)
+    function __construct(string $_title, string $_genre, string $_durata)
     {
 
         $this->title = $_title;
