@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to left, rgb(143, 57, 107),rgb(71, 71, 71));
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.46),rgb(71, 71, 71));
 }
 
 img {
@@ -7,6 +7,14 @@ img {
     object-fit: cover;
     transition: all 0.5s;
 }
+.card{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
 .card:hover img{
     transform: scale(1.2);
+    z-index: -10;
 }
