@@ -5,10 +5,10 @@ class Movie
     public $title;
     private $genres;
     private $duration;
-    private $strDurata;
+    private $typeDuration;
     private $colors;
     public $muted;
-    public $dateRelase;
+    public static $dateRelase;
     public $budget;
 
 
@@ -30,16 +30,20 @@ class Movie
     public function durataString()
     {
         if ($this->duration > 130) {
-            $this->strDurata = "è un lungometraggio";
+            $this->typeDuration = "è un lungometraggio";
         } else {
-            $this->strDurata = "è un cortometraggio";
+            $this->typeDuration = "è un cortometraggio";
         }
     }
     public function getMovieInfo()
     {
 
-        return " titolo: " . $this->title . " genere: " . implode(",", $this->genres) . " durata: " . $this->strDurata . "<br>";
+        return " titolo: " . $this->title . " genere: " . implode(",", $this->genres) . " durata: " . $this->duration . " minuti " . $this->typeDuration . "<br>";
 
+
+    }
+    public function getData()
+    {
 
     }
 }

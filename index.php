@@ -13,7 +13,7 @@ $BlackAdam = new Movie("BlackAdam", ["Fantascienza", "Bello"], 100, "23456", fal
 
 array_push($db_movies, $Avatar, $Avenger, $BlackAdam);
 
-var_dump($db_movies);
+// var_dump($db_movies);
 
 foreach ($db_movies as $Movie) {
     echo $Movie->getMovieInfo();
