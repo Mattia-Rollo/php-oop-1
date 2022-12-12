@@ -29,8 +29,8 @@ include __DIR__ . './partials/header.php';
 ?>
 
 <div class="container">
-    <h1 class="py-3">Lista</h1>
-    <h2>
+    <h1 class="py-3 text-light">Lista</h1>
+    <h2 class="text-light">
         <?php echo "Type: " . Movie::$type; ?>
     </h2>
     <div class="row py-5  gy-3">

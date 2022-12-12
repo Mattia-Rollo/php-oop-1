@@ -1,3 +1,7 @@
+body{
+    background-image: linear-gradient(to left, rgb(143, 57, 107),rgb(71, 71, 71));
+}
+
 img {
     height: 300px;
     object-fit: cover;
