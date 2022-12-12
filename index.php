@@ -29,16 +29,16 @@ include __DIR__ . './partials/header.php';
 ?>
 
 <div class="container">
-    <h1 class="py-3">Movies</h1>
+    <h1 class="py-3">Lista</h1>
     <h2>
-        <?php echo Movie::$type; ?>
+        <?php echo "Type: " . Movie::$type; ?>
     </h2>
     <div class="row py-5  gy-3">
         <?php foreach ($db_movies as $movie) { ?>
         <div class="col-4">
 
 
-            <div class="card" style="w-100">
+            <div class="card shadow-lg" style="w-100">
                 <img src="
                 <?php echo $movie->imgPath; ?> 
                 " class="card-img-top" alt="...">
